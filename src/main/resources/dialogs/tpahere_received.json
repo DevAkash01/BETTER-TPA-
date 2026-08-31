@@ -1,0 +1,51 @@
+{
+  "id": "tpahere_received",
+  "title": "<b><color:#00ffff>Teleport-Here Request from {requester_name}</color></b>",
+  "canCloseWithEscape": true,
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "{requester_name}"
+          },
+          "minecraft:custom_name": {
+            "text": "{requester_name}",
+            "bold": true,
+            "color": "white"
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "{requester_name}",
+          "bold": true,
+          "color": "white"
+        }
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    }
+  ],
+  "inputs": {
+    "textFields": [],
+    "selects": [],
+    "checkboxes": []
+  },
+  "buttons": [
+    {
+      "label": "<color:red>Deny</color>",
+      "tooltip": "Click to deny",
+      "width": 150,
+      "actions": []
+    },
+    {
+      "label": "<color:green>Accept</color>",
+      "tooltip": "Click to accept",
+      "width": 150,
+      "actions": []
+    }
+  ]
+}

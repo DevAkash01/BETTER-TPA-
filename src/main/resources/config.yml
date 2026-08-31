@@ -1,0 +1,89 @@
+# Better Teleporation Configuration
+
+request:
+  expiration-seconds: 60
+  max-outgoing: 3
+  max-incoming: 10
+  prevent-duplicates: true
+
+teleport:
+  delay-seconds: 3
+  cancel-on-move: true
+  move-threshold: 0.5
+  cancel-on-damage: true
+  cancel-on-death: true
+  play-sound: true
+
+cooldown:
+  tpa: 5
+  tpahere: 5
+
+dialog:
+  enabled: true
+  fallback-to-chat: true
+
+dialogs:
+  tpa-confirm: "dialogs/tpa_confirm.json"
+  tpa-received: "dialogs/tpa_received.json"
+  tpahere-confirm: "dialogs/tpahere_confirm.json"
+  tpahere-received: "dialogs/tpahere_received.json"
+
+world-restrictions:
+  enabled: false
+  disabled-worlds:
+    - disabled_world_example
+
+combat:
+  enabled: false
+  combat-duration-seconds: 15
+  block-requests: true
+  block-teleports: true
+
+sounds:
+  request-sent:
+    enabled: true
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    volume: 2.0
+    pitch: 1.2
+  request-received:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_CHIME"
+    volume: 1.0
+    pitch: 1.4
+  request-accepted:
+    enabled: true
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 1.0
+    pitch: 1.5
+  request-denied:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 1.0
+    pitch: 0.5
+  setting-enabled:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+    volume: 1.0
+    pitch: 1.5
+  setting-disabled:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 1.0
+    pitch: 0.6
+  teleport-warmup-tick:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+    volume: 0.7
+    pitch: 1.3
+  teleport-success:
+    enabled: true
+    sound: "ENTITY_ENDERMAN_TELEPORT"
+    volume: 1.0
+    pitch: 1.0
+  teleport-cancel:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 1.0
+    pitch: 0.5
+
+debug: false

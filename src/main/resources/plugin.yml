@@ -1,0 +1,66 @@
+name: BetterTeleporation
+version: '${project.version}'
+main: com.creativedev.betterteleporation.BetterTeleporation
+api-version: '1.21'
+author: CreativeDev
+description: Best Teleportation Plugin.
+
+commands:
+  tpa:
+    description: Send a teleport request to another player.
+    usage: /<command> <player|reload>
+    permission: betterteleporation.tpa
+  tpahere:
+    description: Request another player to teleport to you.
+    usage: /<command> <player>
+    permission: betterteleporation.tpahere
+  tpauto:
+    description: Automatically accept incoming teleport requests.
+    usage: /<command> [on|off|toggle]
+    aliases: [tpaauto, autotpa]
+    permission: betterteleporation.tpauto
+  tpsetting:
+    description: Manage personal teleport request settings.
+    usage: /<command> <tpa|tpahere> [on|off|toggle]
+    aliases: [tpsettings, tpset]
+    permission: betterteleporation.tpsetting
+  tpaccept:
+    description: Accept a pending teleport request.
+    usage: /<command> [player]
+    permission: betterteleporation.tpaccept
+  tpdeny:
+    description: Deny a pending teleport request.
+    usage: /<command> [player]
+    permission: betterteleporation.tpdeny
+
+permissions:
+  betterteleporation.tpa:
+    description: Allows sending /tpa requests.
+    default: true
+  betterteleporation.tpahere:
+    description: Allows sending /tpahere requests.
+    default: true
+  betterteleporation.tpauto:
+    description: Allows toggling automatic acceptance of teleport requests.
+    default: true
+  betterteleporation.tpsetting:
+    description: Allows managing personal teleport settings.
+    default: true
+  betterteleporation.tpaccept:
+    description: Allows accepting teleport requests.
+    default: true
+  betterteleporation.tpdeny:
+    description: Allows denying teleport requests.
+    default: true
+  betterteleporation.admin.reload:
+    description: Allows reloading plugin configuration.
+    default: op
+  betterteleporation.bypass.cooldown:
+    description: Bypasses command cooldowns.
+    default: false
+  betterteleporation.bypass.delay:
+    description: Bypasses teleport warmup delays.
+    default: false
+  betterteleporation.bypass.expiration:
+    description: Bypasses teleport request expiration.
+    default: false

@@ -1,0 +1,76 @@
+# Better Teleporation Messages (MiniMessage Format)
+
+prefix: ""
+
+request:
+  sent: "<prefix><gray>Teleport request sent to <aqua><player></aqua>."
+  sent-here: "<prefix><gray>Teleport-here request sent to <aqua><player></aqua>."
+  received-tpa: "<prefix><aqua><player></aqua> <white>send you a teleport request</white>\n<white>Click </white><green><click:run_command:'/tpaccept <player>'><hover:show_text:'<green>Click to accept request from <player></green>'>Here</hover></click></green><white> to accept</white>"
+  received-tpahere: "<prefix><aqua><player></aqua> <white>wants you to teleport to them</white>\n<white>Click </white><green><click:run_command:'/tpaccept <player>'><hover:show_text:'<green>Click to accept request from <player></green>'>Here</hover></click></green><white> to accept</white>"
+  received-tpa-actionbar: "<aqua><player></aqua> <gray>wants to teleport to you!</gray>"
+  received-tpahere-actionbar: "<aqua><player></aqua> <gray>wants you to teleport to them!</gray>"
+  accepted-sender: "<prefix><aqua><player></aqua> <gray>accepted your teleport request."
+  accepted-target: "<prefix><gray>You accepted the teleport request from <aqua><player></aqua>."
+  denied-sender: "<prefix><aqua><player></aqua> <red>denied your teleport request."
+  denied-target: "<prefix><red>You denied the teleport request from <aqua><player></aqua>."
+  expired-sender: "<prefix><gray>Your teleport request to <aqua><player></aqua> has expired."
+  expired-target: "<prefix><gray>Teleport request from <aqua><player></aqua> has expired."
+  replaced: "<prefix><yellow>Your previous request to <aqua><player></aqua> was replaced."
+
+auto:
+  enabled: "<prefix><green>Auto-accept for teleport requests has been enabled."
+  disabled: "<prefix><red>Auto-accept for teleport requests has been disabled."
+  accepted-sender: "<prefix><aqua><player></aqua> <green>auto-accepted your teleport request."
+  accepted-target: "<prefix><green>Auto-accepted teleport request from <aqua><player></aqua>."
+
+settings:
+  tpa-enabled: "<prefix><green>Incoming /tpa requests have been enabled."
+  tpa-disabled: "<prefix><red>Incoming /tpa requests have been disabled."
+  tpahere-enabled: "<prefix><green>Incoming /tpahere requests have been enabled."
+  tpahere-disabled: "<prefix><red>Incoming /tpahere requests have been disabled."
+  status: "<prefix><gray>Your Request Settings: TPA: <tpa_status> <dark_gray>•</dark_gray> <gray>TPA-Here: <tpahere_status>"
+
+teleport:
+  warmup: "<prefix>&fTeleporting in &b<seconds> &fsecond(s)... &7[Don't move!]"
+  teleporting: "<prefix>&fTeleporting now..."
+  success: "<prefix>&aTeleported successfully!"
+  cancelled-move: "<prefix><red>Teleportation cancelled because you moved!"
+  cancelled-damage: "<prefix><red>Teleportation cancelled because you took damage!"
+  cancelled-death: "<prefix><red>Teleportation cancelled because you died!"
+  cancelled-disconnect: "<prefix><red>Teleportation cancelled because the other player disconnected."
+  countdown-actionbar: "&fTeleporting in &b<seconds> &fseconds... &7[Don't move!]"
+  target-actionbar: "&fTeleporting in &b<seconds> &fseconds..."
+  teleporting-actionbar: "&fTeleporting now..."
+  success-actionbar: "&a✔ &fTeleported successfully!"
+  cancelled-move-actionbar: "&c✖ Teleport cancelled: You moved!"
+  cancelled-damage-actionbar: "&a✖ &fTeleport cancelled: You took damage!"
+
+dialog:
+  title-tpa: "Are you sure you want to let <player> teleport to you?"
+  title-tpahere: "Are you sure you want to teleport to <player>?"
+  confirm-button: "<green><bold>Confirm</bold></green>"
+  cancel-button: "<red><bold>Cancel</bold></red>"
+
+error:
+  no-permission: "<prefix><red>You do not have permission to execute this command."
+  player-only: "<prefix><red>This command can only be executed by players."
+  player-not-found: "<prefix><red>Player <aqua><player></aqua> was not found or is offline."
+  self-request: "<prefix><red>You cannot send a teleport request to yourself."
+  duplicate-request: "<prefix><red>You already have a pending teleport request to <aqua><player></aqua>."
+  max-outgoing: "<prefix><red>You have reached the maximum number of outgoing requests (<max>)."
+  max-incoming: "<prefix><red>That player has too many pending incoming requests."
+  no-pending-requests: "<prefix><red>You have no pending teleport requests."
+  no-request-from-player: "<prefix><red>You do not have a pending teleport request from <aqua><player></aqua>."
+  request-invalid: "<prefix><red>This teleport request is no longer valid."
+  cooldown: "<prefix><red>Please wait <gold><seconds></gold>s before using this command again."
+  world-disabled: "<prefix><red>Teleportation is disabled in this world."
+  combat: "<prefix><red>You cannot do that while in combat! (Wait <gold><seconds></gold>s)"
+  already-teleporting: "<prefix><red>A teleport is already in progress for you."
+  unsafe-destination: "<prefix><red>Cannot teleport: destination is unsafe or obstructed."
+  target-tpa-disabled: "<prefix><red><player> has disabled incoming /tpa requests."
+  target-tpahere-disabled: "<prefix><red><player> has disabled incoming /tpahere requests."
+
+admin:
+  reload-success: "<prefix><green>Configuration and messages reloaded successfully."
+  gui-enabled: "<prefix><green>Confirmation GUI menu has been enabled."
+  gui-disabled: "<prefix><red>Confirmation GUI menu has been disabled."

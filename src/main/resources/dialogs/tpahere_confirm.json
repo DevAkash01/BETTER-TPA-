@@ -1,0 +1,51 @@
+{
+  "id": "tpahere_confirm",
+  "title": "<b><color:#00ffff>Are you sure you want {target_name} to teleport to you?</color></b>",
+  "canCloseWithEscape": true,
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "{target_name}"
+          },
+          "minecraft:custom_name": {
+            "text": "{target_name}",
+            "bold": true,
+            "color": "white"
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "{target_name}",
+          "bold": true,
+          "color": "white"
+        }
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    }
+  ],
+  "inputs": {
+    "textFields": [],
+    "selects": [],
+    "checkboxes": []
+  },
+  "buttons": [
+    {
+      "label": "<color:red>Close</color>",
+      "tooltip": "Click to close",
+      "width": 150,
+      "actions": []
+    },
+    {
+      "label": "<color:green>Confirm</color>",
+      "tooltip": "",
+      "width": 150,
+      "actions": []
+    }
+  ]
+}

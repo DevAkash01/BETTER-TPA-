@@ -1,0 +1,12 @@
+target/
+*.jar
+*.class
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+settings.yml
+BETTER_TELEPORTATION_EXPLANATION.txt
+*.log
