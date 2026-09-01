@@ -1,4 +1,4 @@
-# Better Teleportation (BETTER-TPA)
+# Better Teleportation (CORE-TPA)
 
 A modern, high-performance, standalone PaperMC teleportation plugin designed for Minecraft 1.21+ (built with Java 25 & 21, targeting the official Paper 1.21.x API).
 
